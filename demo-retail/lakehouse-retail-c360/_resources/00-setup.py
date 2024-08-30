@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %pip install mlflow==2.15.1
+# MAGIC dbutils.library.restartPython()
+
+# COMMAND ----------
+
 # MAGIC %run ../config
 
 # COMMAND ----------

@@ -292,14 +292,14 @@ AS
 -- COMMAND ----------
 
 -- DBTITLE 1,Load the model as SQL function
--- MAGIC %python
--- MAGIC import mlflow
--- MAGIC mlflow.set_registry_uri('databricks-uc')
--- MAGIC #                                                                              Stage/version  
--- MAGIC #                                                                 Model name         |        
--- MAGIC #                                                                     |              |        
--- MAGIC predict_churn_udf = mlflow.pyfunc.spark_udf(spark, "models:/main__build.dbdemos_retail_c360.dbdemos_customer_churn@prod", "int")
--- MAGIC spark.udf.register("predict_churn", predict_churn_udf)
+--%python
+--import mlflow
+--mlflow.set_registry_uri('databricks-uc')
+--#                                                                              Stage/version  
+--#                                                                 Model name         |        
+--#                                                                     |              |        
+--predict_churn_udf = mlflow.pyfunc.spark_udf(spark, "models:/main__build.dbdemos_retail_c360.dbdemos_customer_churn@prod", "int")
+--spark.udf.register("predict_churn", predict_churn_udf)
 
 -- COMMAND ----------
 
