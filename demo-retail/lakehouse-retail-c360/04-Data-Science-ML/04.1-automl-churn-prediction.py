@@ -86,6 +86,7 @@
 # COMMAND ----------
 
 # MAGIC %pip install databricks-sdk==0.17.0
+# MAGIC %pip install databricks-feature-store==0.17.0
 # MAGIC dbutils.library.restartPython()
 
 # COMMAND ----------

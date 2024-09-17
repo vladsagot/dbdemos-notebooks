@@ -22,7 +22,7 @@ dbutils.widgets.dropdown("shap_enabled", "true", ["true", "false"], "Compute sha
 
 # COMMAND ----------
 
-# MAGIC %pip install databricks-sdk==0.17.0
+# MAGIC %pip install databricks-sdk==0.32.1
 # MAGIC dbutils.library.restartPython()
 
 # COMMAND ----------
